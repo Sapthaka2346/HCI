@@ -16,6 +16,10 @@
 
 <style>
 
+body{
+  background-color: #ffffe6;
+}
+
 .header{
   overflow: hidden;
   width: auto;
@@ -137,7 +141,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #e68a00;
   color: white;
   padding: 12px 50px;
   border: none;
@@ -148,7 +152,7 @@ input[type=submit] {
 }
 
 input[type=reset] {
-  background-color: #4CAF50;
+  background-color: #e68a00;
   color: white;
   padding: 12px 50px;
   border: none;
@@ -158,17 +162,22 @@ input[type=reset] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #4CAF50;
 }
 
 input[type=reset]:hover {
-  background-color: #45a049;
+  background-color:#8C001A;
 }
 
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+.btn-dark {
+    background-color: #8C001A;
+    margin-right: 10px;
 }
 
 .footer {
@@ -181,7 +190,6 @@ background-color:  #0C090A;
 color: white;
 text-align: center;
 }
-
 
 </style>
 
@@ -209,7 +217,7 @@ text-align: center;
   </div>
 
   <div class="nav">
-  <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Home_page.html" >Home</a>
+  <a href="file:///C:/Users/SHASHODA/Desktop/Panadura-Urban-Council/Home_page.html" >Home</a>
   <ul>
     <li>
       <a href="#">The Council</a>
@@ -301,17 +309,17 @@ text-align: center;
         <input class="btn" type="date" name="birthday" style="border: 2px solid; border-radius: 5px;background-color:white;">
       </form>
       <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-        <input type="text" style="margin-left:5px;border: 2px solid; border-radius: 5px; height:42px;" placeholder="Search.." name="search2">
+        <input type="text" style="margin-left:5px;border: 2px solid; border-radius: 5px; height:42px; width: 200px; margin-top: -1px;" placeholder="Search.." name="search2">
         <button class="btn btn-dark" type="submit" style="margin-left:1px;border: 2px solid; border-radius: 5px;margin-top:-5px;"><i class="fa fa-search"></i></button>
       </form>
     </div>
   </div>
 
-  <div class="inquiry" style="margin-top:8%;">
+  <div class="inquiry" style="margin-top:5%; border-radius: 20px; border: 3px solid; margin-bottom: 2%; background-color: #ffffb3; margin-right: 2%; margin-left: 2%;">
 
-  <h2 style="text-align: center;"><b>Waste Management</b></h2><br>
+  <h2 style="text-align: center; margin-top: 2%;"><b>Waste Management</b></h2><br>
 
-  <div class="container">
+  <div class="container" style="margin-bottom:1%;border: 1px solid; border-radius: 20px;">
     <form action="/action_page.php">
       <h4><label for="name">Name</label></h4>
       <input type="text" id="fname" name="firstname" placeholder="Your name.." style="border-radius:15px;">
@@ -351,27 +359,23 @@ text-align: center;
       <input type="reset" value="Reset">
     </form>
   </div>
-
-  <div class="container-fluid" style="background-color: black; height: 200px; margin-top: 5%; margin-bottom:1%;">
+</div>
+  <div class="footer">
     <div class="row">
-      <div class="footerleft col-md-3 col-lg-3 col-xl-3" style="background-color:#B6B6B4; padding:20px;margin-top: 2px;margin-left: 2%; border-radius:20px;">
-        <h3>Card Accepted</h3>
-        <div class="row">
-          <i class="fab fa-cc-visa fa-5x" style="margin-top: 2%;margin-left:12%;"></i>
-          <i class="fab fa-cc-mastercard fa-5x" style="margin-top: 2%;margin-left:12%;" ></i>
-        </div>
+      <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 2%;">
+        <i class="fab fa-cc-paypal fa-2x" style="margin-top: 2%;margin-left: -200px;"></i>
+        <i class="fab fa-cc-amex fa-2x"  style="margin-top: 2%;margin-left:3%;"></i>
+        <i class="fab fa-cc-visa fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
+        <i class="fab fa-cc-mastercard fa-2x" style="margin-top: 2%;margin-left:3%;" ></i>
       </div>
-      <div class="footermiddle col-md-5 col-lg-6 col-xl-5">
-
+      <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 4%;">
+        <h6> copyright@2020 Panadura.uc.gov.lk</h6>
       </div>
-      <div class="footerright col-md-3 col-lg-3 col-xl-3" style="background-color:#B6B6B4; padding:20px;margin-top: 2px;margin-left: 4%; border-radius:20px;">
-        <h3>Our Social</h3>
-        <div class="row">
-          <i class="fab fa-facebook-square fa-4x" style="margin-top: 2%;margin-left:17%;"></i>
-          <i class="fas fa-envelope fa-4x" style="margin-top: 2%;margin-left:5%;"></i>
-          <i class="fab fa-instagram-square fa-4x" style="margin-top: 2%;margin-left:5%;"></i>
-        </div>
-      </div>
+      <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 2%;">
+        <i class="fab fa-facebook-square fa-2x" style="margin-top: 2%;margin-left:50%;"></i>
+        <i class="fas fa-envelope fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
+        <i class="fab fa-instagram-square fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
+        <i class="fab fa-twitter-square fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
     </div>
   </div>
 
