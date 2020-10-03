@@ -237,7 +237,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #e68a00;
   color: white;
   padding: 12px 50px;
   border: none;
@@ -248,7 +248,7 @@ input[type=submit] {
 }
 
 input[type=reset] {
-  background-color: #4CAF50;
+  background-color: #e68a00;
   color: white;
   padding: 12px 50px;
   border: none;
@@ -258,11 +258,11 @@ input[type=reset] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #4CAF50;
 }
 
 input[type=reset]:hover {
-  background-color: #45a049;
+  background-color:#8C001A;
 }
 
 .container {
@@ -270,7 +270,16 @@ input[type=reset]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+.footer {
 
+left: 0;
+margin-bottom: 2%;
+width: 100%;
+height: 100px;
+background-color:  #0C090A;
+color: white;
+text-align: center;
+}
 </style>
 
 <body>
@@ -390,55 +399,86 @@ input[type=reset]:hover {
           <input class="btn" type="date" name="birthday" style="border: 2px solid; border-radius: 5px;background-color:white;">
         </form>
         <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-          <input type="text" style="margin-left:5px;border: 2px solid; border-radius: 5px; height:42px;" placeholder="Search.." name="search2">
+          <input type="text" style="margin-left:5px;border: 2px solid; border-radius: 5px; height:42px; width:200px; margin-top: -1px;" placeholder="Search.." name="search2">
           <button class="btn btn-dark" type="submit" style="margin-left:1px;border: 2px solid; border-radius: 5px;margin-top:-5px;"><i class="fa fa-search"></i></button>
         </form>
       </div>
     </div>
 
 <div>
-    <div class="inquiry" style="margin-top:8%;">
+  <div class="inquiry" style="margin-top:5%; border-radius: 20px; border: 3px solid; margin-bottom: 2%; background-color: #EDDA74; margin-right: 2%; margin-left: 2%;">
 
-    <h2 style="text-align: center;"><b>Registration</b></h2><br>
+  <h2 style="text-align: center; margin-top: 2%;"><b>Registration</b></h2><br>
 
-    <div class="container">
-      <form action="/action_page.php">
-        <h4><label for="name">Name</label></h4>
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." style="border-radius:15px;">
+  <div class="container" style="margin-bottom:1%;border: 1px solid; border-radius: 20px;">
+    <form action="/action_page.php">
+      <h4><label for="name">Full Name</label></h4>
+      <input type="text" id="fname" name="firstname" placeholder="Type your full name.." style="border-radius:15px;">
 
-        <h4><label for="email">Email</label></h4>
-        <input type="text" id="email" name="email" placeholder="Your email address.."style="border-radius:15px;">
+      <h4><label for="email">Address</label></h4>
+      <input type="text" id="email" name="email" placeholder="Type your address.."style="border-radius:15px;">
 
-        <h4><label for="address">Address</label></h4>
-        <input type="text" id="address" name="address" placeholder="Your address.." style="border-radius:15px;">
+      <h4><label for="address">Mobile</label></h4>
+      <input type="text" id="address" name="address" placeholder="Type your mobile number.." style="border-radius:15px;">
 
-        <h4><label for="telephone">Telephone</label></h4>
-        <input type="text" id="telephone" name="telephone" placeholder="Your telephone.." style="border-radius:15px;">
+      <h4><label for="telephone">Email</label></h4>
+      <input type="text" id="telephone" name="telephone" placeholder="Type your email address.." style="border-radius:15px;">
 
-        <h4><label for="location">Location</label></h4>
-        <select id="location" name="location" style="border-radius:15px;">
-          <option value="select">Select--</option>
-          <option value="athulkotte">AthulKotte</option>
-          <option value="bandaranayakepura">Bandaranayakepura</option>
-          <option value="nawala">Nawala</option>
-          <option value="nugegoda">Nugegoda</option>
-          <option value="obesekarapura">Obesekarapura</option>
-          <option value="pagoda">Pagoda</option>
-          <option value="rajagiriya">Rajagiriya</option>
-        </select>
+      <h4><label for="telephone">Password</label></h4>
+      <input type="text" id="telephone" name="telephone" placeholder="Enter a password with 8 characters.." style="border-radius:15px;">
 
-        <h4><label for="inquirytype">Inquiry Type</label></h4>
-        <select id="inquirytype" name="inquirytype" style="border-radius:10px;">
-          <option value="select">Select--</option>
-          <option value="garbagenotcollected">Garbage not collected</option>
-          <option value="other">other</option>
-        </select>
+      <h4><label for="telephone">Confirm Password</label></h4>
+      <input type="text" id="telephone" name="telephone" placeholder="Type password again.." style="border-radius:15px;">
 
-        <h4><label for="suggetions">Suggetions</label></h4>
-        <textarea id="suggetions" name="suggetions" placeholder="Write something.." style="height:100px;border-radius:10px;"></textarea>
 
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-      </form>
-    </div>
+      <h4><label for="location">Division</label></h4>
+      <select id="location" name="location" style="border-radius:15px;">
+        <option value="select">Select--</option>
+        <option value="athulkotte">Division 1</option>
+        <option value="bandaranayakepura">Division 2</option>
+        <option value="nawala">Division 3</option>
+        <option value="nugegoda">Division 4</option>
+        <option value="obesekarapura">Division 5</option>
+        <option value="pagoda">Division 6</option>
+        <option value="rajagiriya">Division 7</option>
+      </select>
+
+      <h4><label for="inquirytype">Street</label></h4>
+      <select id="inquirytype" name="inquirytype" style="border-radius:10px;">
+        <option value="select">Select--</option>
+        <option value="garbagenotcollected">De soysa mawatha</option>
+        <option value="other">Jubilee road</option>
+        <option value="other">Perera mawatha</option>
+        <option value="other">Silva mawatha</option>
+        <option value="other">Vijaya road</option>
+      </select>
+
+      <h4><label for="suggetions">Suggetions</label></h4>
+      <textarea id="suggetions" name="suggetions" placeholder="Write something.." style="height:100px;border-radius:10px;"></textarea>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
   </div>
+</div>
+
+
+<div class="footer">
+  <div class="row">
+    <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 2%;">
+      <i class="fab fa-cc-paypal fa-2x" style="margin-top: 2%;margin-left: -200px;"></i>
+      <i class="fab fa-cc-amex fa-2x"  style="margin-top: 2%;margin-left:3%;"></i>
+      <i class="fab fa-cc-visa fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
+      <i class="fab fa-cc-mastercard fa-2x" style="margin-top: 2%;margin-left:3%;" ></i>
+    </div>
+    <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 4%;">
+      <h6> copyright@2020 Panadura.uc.gov.lk</h6>
+    </div>
+    <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 2%;">
+      <i class="fab fa-facebook-square fa-2x" style="margin-top: 2%;margin-left:50%;"></i>
+      <i class="fas fa-envelope fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
+      <i class="fab fa-instagram-square fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
+      <i class="fab fa-twitter-square fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
+  </div>
+</div>
+</div>

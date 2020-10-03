@@ -142,48 +142,7 @@ ul li ul li:hover {background: #FFE5B4;}
   height:200px;
   width:100%;
 }
-.inquiry {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #e68a00;
-  color: white;
-  padding: 12px 50px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-left: 35%;
-}
-
-input[type=reset] {
-  background-color: #e68a00;
-  color: white;
-  padding: 12px 50px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-input[type=submit]:hover {
-  background-color: #4CAF50;
-}
-
-input[type=reset]:hover {
-  background-color:#8C001A;
-}
 
 .left{
   border: 2px solid;
@@ -266,7 +225,7 @@ body{
 .footer {
 
 left: 0;
-margin-bottom: 1%;
+margin-bottom: 2%;
 width: 100%;
 height: 100px;
 background-color:  #0C090A;
@@ -404,54 +363,14 @@ text-align: center;
           <input class="btn" type="date" name="birthday" style="border: 2px solid; border-radius: 5px;background-color:white;">
         </form>
         <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-          <input type="text" style="margin-left:5px;border: 2px solid; border-radius: 5px; height:42px;width:200px; margin-top:-0.1px;" placeholder="Search.." name="search2">
+          <input type="text" style="margin-left:5px;border: 2px solid; border-radius: 5px; height:42px;" placeholder="Search.." name="search2">
           <button class="btn btn-dark" type="submit" style="margin-left:1px;border: 2px solid; border-radius: 5px;margin-top:-5px;"><i class="fa fa-search"></i></button>
         </form>
       </div>
     </div>
-<br>
-
-<!-- Reservation form -->
-
-<div class="inquiry" style="margin-top:5%; border-radius: 20px; border: 3px solid; margin-bottom: 2%; background-color: #EDDA74; margin-right: 2%; margin-left: 2%;">
-
-<h2 style="text-align: center; margin-top: 2%;"><b>Health Inquiry</b></h2><br>
-
-<div class="container" style="margin-bottom:1%;border: 1px solid; border-radius: 20px;background-color:#f2f2f2;">
-  <form action="/action_page.php">
-    <h4><label for="name" style="margin-top:2%;">Name</label></h4>
-    <input type="text" id="fname" name="firstname" placeholder="Your name.." style="border-radius:15px;">
-
-    <h4><label for="email">Email</label></h4>
-    <input type="text" id="email" name="email" placeholder="Your email address.."style="border-radius:15px;">
-
-    <h4><label for="address">Address</label></h4>
-    <input type="text" id="address" name="address" placeholder="Your address.." style="border-radius:15px;">
-
-    <h4><label for="telephone">Telephone</label></h4>
-    <input type="text" id="telephone" name="telephone" placeholder="Your telephone.." style="border-radius:15px;">
+<br><br><br>
 
 
-    <h4><label for="inquirytype">Inquiry Type</label></h4>
-    <select id="inquirytype" name="inquirytype" style="border-radius:10px;">
-      <option value="select">Select--</option>
-      <option value="garbagenotcollected">Medicine</option>
-      <option value="garbagenotcollected">Health Properties</option>
-      <option value="garbagenotcollected">Medical staff</option>
-      <option value="garbagenotcollected">Health policies</option>
-      <option value="garbagenotcollected">Health projects</option>
-      <option value="other">other</option>
-    </select>
-
-    <h4><label for="suggetions">Suggetions</label></h4>
-    <textarea id="suggetions" name="suggetions" placeholder="Write something.." style="height:100px;border-radius:10px;"></textarea>
-
-    <input type="submit" value="Submit" style="margin-bottom:2%;">
-    <input type="reset" value="Reset" style="margin-bottom:2%;">
-
-  </form>
-</div>
-</div>
 
 <!-- footer -->
 
