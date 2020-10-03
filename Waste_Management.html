@@ -325,9 +325,9 @@ text-align: center;
   <h2 style="text-align: center; margin-top: 2%;"><b>Waste Management</b></h2><br>
 
   <div class="container" style="margin-bottom:1%;border: 1px solid; border-radius: 20px;">
-    <form action="/action_page.php">
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
       <h4><label for="name">Name</label></h4>
-      <input type="text" id="fname" name="firstname" placeholder="Your name.." style="border-radius:15px;">
+      <input type="text"  id="name" name="firstname" placeholder="Your name.." style="border-radius:15px;">
 
       <h4><label for="email">Email</label></h4>
       <input type="text" id="email" name="email" placeholder="Your email address.."style="border-radius:15px;">
