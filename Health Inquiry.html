@@ -6,263 +6,185 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Bootstrap CSS -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<head>
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<title>PANADURA URBAN COUNCIL</title>
+<title>Health Inquiry</title>
 
 <link rel="stylesheet" type="text/css" href="css/all.min.css">
 
 <style>
 
+body{
+ background-color: #ffffe6;
+}
+
 .header{
-  overflow: hidden;
-  width: auto;
+ overflow: hidden;
+ width: auto;
+ margin-top: 2%;
+ margin-left: 1%;
 }
 
 .headerleft{
-  background-color: #8C001A;
-  //* border: 3px solid; */
+ background-color: #8C001A;
+ //* border: 3px solid; */
 }
 
 .headerright{
-  padding: 0;
+ padding: 0;
 }
 
 .container-fluid{
-  padding-top: 2%;
-  height:100vh;
+ padding-top: 2%;
+ height:100vh;
 
 }
 
 #logo img{
-  width:100px;
-  height: auto;
-  padding-left: 10%;
+ width:100px;
+ height: auto;
+ padding-left: 10%;
 }
 
 #logop img{
-  width:130px;
-  height: auto;
-  float: right;
+ width:130px;
+ height: auto;
+ float: right;
 }
 
 #panadura{
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 50px;
+ text-align: center;
+ color: #FFFFFF;
+ font-size: 50px;
 
 }
 
 .card{
-  background-color: #FFDB58;
-  float: right;
-  height: 142px;
-  border: 1px solid;
-  text-align: center;
-  border-radius: 12px;
-  background-color: #e68a00;
+ float: right;
+ height: 142px;
+ border: 1px solid;
+ text-align: center;
+ border-radius: 12px;
+ background-color: #e68a00;
 }
 
 .fa-user{
-  text-align: center;
-  padding-top: 5%;
+ text-align: center;
+ padding-top: 5%;
 }
 
 .card-body a{
-  text-align: center;
-  margin-left: 15px;
-  font-size: 15px;
+ text-align: center;
+ margin-left: 15px;
+ font-size: 15px;
 }
 
 .nav{
-  background-color: #e68a00;
-  margin-top: 1%;
-  margin-right: 1%;
-  border: 2px solid;
-  border-radius: 10px;
+ background-color: #e68a00;
+ margin-top: 1%;
+ margin-right: 1%;
+ margin-left: 1%;
+ border: 2px solid;
+ border-radius: 10px;
 }
 
 .nav a{
-  text-decoration: none;
-  color:#000000;
-  font-size: 18px;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display:inline-block;
+ text-decoration: none;
+ color:#000000;
+ font-size: 18px;
+ padding-right: 15px;
+ padding-left: 15px;
+ padding-top: 8px;
+ padding-bottom: 8px;
+ display:inline-block;
 }
 
 ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
+ display: inline;
+ margin: 0;
+ padding: 0;
 }
 
 ul li {display: inline-block;}
 ul li:hover {background: #F2BB66;}
 ul li:hover ul {display: block;}
 ul li ul {
-  position: absolute;
-  text-align: center;
-  width: 200px;
-  display: none;
-  z-index: 1;
+ position: absolute;
+ text-align: center;
+ width: 200px;
+ display: none;
+ z-index: 1;
 }
 
 ul li ul li {
-  background: #F2BB66;
-  display: block;
-  border: 2px;
+ background: #F2BB66;
+ display: block;
+ border: 2px;
 }
 
 ul li ul li a {display:block !important;}
 ul li ul li:hover {background: #FFE5B4;}
 
-.carousel{
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  margin-top: 3%;
-}
-
-.carousel-inner{
-  border-radius: 30px;
-  position: relative;
-  z-index: -1;
-}
-.carousel-caption{
-  top:40%;
-}
-.carousel-inner img {
-  height:200px;
-  width:100%;
-}
 .inquiry {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
 input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+ margin-top: 6px;
+ margin-bottom: 16px;
+ resize: vertical;
 }
 
 input[type=submit] {
-  background-color: #e68a00;
-  color: white;
-  padding: 12px 50px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-left: 35%;
+ background-color: #e68a00;
+ color: white;
+ padding: 12px 50px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ font-weight: bold;
+ margin-left: 35%;
 }
 
 input[type=reset] {
-  background-color: #e68a00;
-  color: white;
-  padding: 12px 50px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
+ background-color: #e68a00;
+ color: white;
+ padding: 12px 50px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ font-weight: bold;
 }
 
 input[type=submit]:hover {
-  background-color: #4CAF50;
+ background-color: #4CAF50;
 }
 
 input[type=reset]:hover {
-  background-color:#8C001A;
+ background-color:#8C001A;
 }
 
-.left{
-  border: 2px solid;
+.container {
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 20px;
 }
 
-.carouseltwo{
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  margin-top: 3%;
-  overflow: hidden;
+.btn-dark {
+   background-color: #8C001A;
+   margin-right: 10px;
 }
 
-.carousel-innertwo{
-  border-radius: 30px;
-  position: relative;
-  z-index: -1;
-}
-
-.carousel-innertwo img {
-  height:200px;
-  width:100%;
-  padding: 10px;
-}
-
-.carousel-innertwo > .next {
-  display: none;
-}
-.carousel-innertwo > .prev {
-  display: none;
-}
-
-.right{
-  border: 2px solid;
-}
-
-.card{
-
-}
-
-.carousel-item{
-  overflow: hidden;
-}
-
-.carouse-item img{
-  width: auto;
-  height: 100px;
-  display: block;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.carousel-control-prev{
-  width: 5%;
-  height: 20%;
-  margin-top: 50px;
-
-}
-
-.carousel-control-next{
-  width: 5%;
-  height: 20%;
-  margin-top: 50px;
-}
-
-.btn-dark{
-  background-color: #8C001A;
-  margin-right: 10px;
-
-}
-
-
-body{
-  background-color: #ffffe6;
-}
-
-.down{
-  margin-top:5%;
-}
 .footer {
 
 left: 0;
@@ -274,215 +196,227 @@ color: white;
 text-align: center;
 }
 
-.carouseltext{
-  margin-top: 2%;
-}
-
-.carousel-innertwo img{
-  height:500px;
-  width: auto;
-  margin-left: 22%;
-  overflow: hidden;
-}
-
 </style>
 
 <body>
 
-  <div class="container-fluid">
-    <div class="header col-lg-12">
-      <div class="row">
-        <div class="headerleft col-lg-10">
-          <div class="row">
-            <div id="logo" class="col-sm-2 align-self-end"><img src="img/logo.png" alt=""></div>
-            <div id="panadura" class="col-sm-8 align-self-center">PANADURA URBAN COUNCIL</div>
-            <div id="logop" class="col-sm-2 align-self-center"><img src="img/logop.png" alt=""></div>
-          </div>
-        </div>
-        <div class="headerright d-flex justify-content-end col-lg-2">
-          <div id="admin" class="col-sm-2 align-self-center"><div class="card" style="width: 14rem;">
-            <i class="fas fa-user fa-3x"></i>
-            <div class="card-body">
-              <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Admin%20Login.html" class="btn btn-dark" style="color:#fff;">Admin Login</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <div class="header col-lg-12">
+   <div class="row">
+     <div class="headerleft col-lg-10">
+       <div class="row">
+         <div id="logo" class="col-sm-2 align-self-end"><img src="img/logo.png" alt=""></div>
+         <div id="panadura" class="col-sm-8 align-self-center">PANADURA URBAN COUNCIL</div>
+         <div id="logop" class="col-sm-2 align-self-center"><img src="img/logop.png" alt=""></div>
+       </div>
+     </div>
+     <div class="headerright d-flex justify-content-end col-lg-2">
+       <div id="admin" class="col-sm-2 align-self-center"><div class="card" style="width: 14rem;">
+         <i class="fas fa-user fa-3x"></i>
+         <div class="card-body">
+           <a href="#" class="btn btn-dark" style="color:#fff;">Admin Login</a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ </div>
 
-  <div class="nav">
-    <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Home_page.html" >Home</a>
-    <ul>
-      <li>
-        <a href="#">The Council</a>
-        <ul>
-          <li><a href="#">Vision and Mission</a></li>
-          <li><a href="#">Council History</a></li>
-          <li><a href="#">General Information</a></li>
-          <li><a href="#">Council Manager</a></li>
-          <li><a href="#">Council Map</a></li>
-          <li><a href="#">Administrative structure</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Services</a>
-        <ul>
-          <li><a href="#">Road Development</a></li>
-          <li><a href="#">General Stores</a></li>
-          <li><a href="#">Sports Flour</a></li>
-          <li><a href="#">Cemeteries</a></li>
-          <li><a href="#">Libraries</a></li>
-          <li><a href="#">Kindergartens</a></li>
-          <li><a href="#">Waste Management</a></li>
-          <li><a href="#">Health</a></li>
-          <li><a href="#">Children Parks</a></li>
-          <li><a href="#">Auditorium</a></li>
-          <li><a href="#">Swimming Pool</a></li>
-          <li><a href="#">Recycling</a></li>
-        </ul>
-      </li>
-      <a href="#">Gallery</a>
-      <li>
-        <a href="#">Download</a>
-        <ul>
-          <li><a href="#">Application Form</a></li>
-          <li><a href="#">Budget Reports</a></li>
-          <li><a href="#">Council Reports</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Tenders</a>
-        <ul>
-          <li><a href="#">Tender Application Forms</a></li>
-          <li><a href="#">Find Tenders</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Payments</a>
-        <ul>
-          <li><a href="#">Assesments</a></li>
-        </ul>
-      </li>
+ <div class="nav">
+ <a href="file:///C:/Users/SHASHODA/Desktop/Panadura-Urban-Council/Home_page.html" >Home</a>
+ <ul>
+   <li>
+     <a href="#">The Council</a>
+     <ul>
+       <li><a href="#">Vision and Mission</a></li>
+       <li><a href="#">Council History</a></li>
+       <li><a href="#">General Information</a></li>
+       <li><a href="#">Council Manager</a></li>
+       <li><a href="#">Council Map</a></li>
+       <li><a href="#">Administrative structure</a></li>
+     </ul>
+   </li>
+   <li>
+     <a href="#">Services</a>
+     <ul>
+       <li><a href="#">Road Development</a></li>
+       <li><a href="#">General Stores</a></li>
+       <li><a href="#">Sports Flour</a></li>
+       <li><a href="#">Cemeteries</a></li>
+       <li><a href="#">Libraries</a></li>
+       <li><a href="#">Kindergartens</a></li>
+       <li><a href="#">Waste Management</a></li>
+       <li><a href="#">Health</a></li>
+       <li><a href="#">Children Parks</a></li>
+       <li><a href="#">Auditorium</a></li>
+       <li><a href="#">Swimming Pool</a></li>
+       <li><a href="#">Recycling</a></li>
+     </ul>
+   </li>
+   <a href="#">Gallery</a>
+   <li>
+     <a href="#">Download</a>
+     <ul>
+       <li><a href="#">Application Form</a></li>
+       <li><a href="#">Budget Reports</a></li>
+       <li><a href="#">Council Reports</a></li>
+     </ul>
+   </li>
+   <li>
+     <a href="#">Tenders</a>
+     <ul>
+       <li><a href="#">Tender Application Forms</a></li>
+       <li><a href="#">Find Tenders</a></li>
+     </ul>
+   </li>
+   <li>
+     <a href="#">Payments</a>
+     <ul>
+       <li><a href="#">Assesments</a></li>
+     </ul>
+   </li>
 
-      <li>
-        <a href="#">Inquiry</a>
-        <ul>
-          <li><a href="#">Street Lights</a></li>
-          <li><a href="Waste_Management.html">Waste Management</a></li>
-          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Health%20Inquiry.html">Health</a></li>
-          <li><a href="#">Other</a></li>
-          <li><a href="#">Proposed</a></li>
-        </ul>
-      </li>
-      <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/make%20reservation.html">Reservation</a>
+   <li>
+     <a href="#">Inquiry</a>
+     <ul>
+       <li><a href="#">Street Lights</a></li>
+       <li><a href="Waste_Management.html">Waste Management</a></li>
+       <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Health%20Inquiry.html">Health</a></li>
+       <li><a href="#">Other</a></li>
+       <li><a href="#">Proposed</a></li>
+     </ul>
+   </li>
+   <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/make%20reservation.html">Reservation</a>
 
-      <li>
-        <a href="#">Registration</a>
-        <ul>
-          <li><a href="#">Enter an Account</a></li>
-          <li><a href="#">User Information</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Information Act</a>
-        <ul>
-          <li><a href="#">About the Information Act</a></li>
-          <li><a href="#">Information Officers</a></li>
-          <li><a href="#">Information</a></li>
-          <li><a href="#">Information Act</a></li>
-        </ul>
-      </li>
+   <li>
+     <a href="#">Registration</a>
+     <ul>
+       <li><a href="#">Enter an Account</a></li>
+       <li><a href="#">User Information</a></li>
+     </ul>
+   </li>
+   <li>
+     <a href="#">Information Act</a>
+     <ul>
+       <li><a href="#">About the Information Act</a></li>
+       <li><a href="#">Information Officers</a></li>
+       <li><a href="#">Information</a></li>
+       <li><a href="#">Information Act</a></li>
+     </ul>
+   </li>
 
-      <a href="#">Feedback</a>
-      <a href="#">Contact Us</a>
-    </div>
+   <a href="#">Feedback</a>
+   <a href="#">Contact Us</a>
+ </div>
 
-    <div class="calendar" style="float:right; margin-right: 5%; padding-top: 1%;">
-      <div class="row">
-        <form action="/action_page.php">
-          <input class="btn" type="date" name="birthday" style="border: 2px solid; border-radius: 5px;background-color:white;">
-        </form>
-        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-          <input type="text" style="margin-left:5px;border: 2px solid; border-radius: 5px; height:42px;width:200px; margin-top:-0.1px;" placeholder="Search.." name="search2">
-          <button class="btn btn-dark" type="submit" style="margin-left:1px;border: 2px solid; border-radius: 5px;margin-top:-5px;"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-    </div>
+ <div class="calendar" style="float:right; margin-right: 5%; padding-top: 1%;">
+   <div class="row">
+     <form action="/action_page.php">
+       <input class="btn" type="date" name="birthday" style="border: 2px solid; border-radius: 5px;background-color:white;">
+     </form>
+     <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+       <input type="text" style="margin-left:5px;border: 2px solid; border-radius: 5px; height:42px; width: 200px; margin-top: -1px;" placeholder="Search.." name="search2">
+       <button class="btn btn-dark" type="submit" style="margin-left:1px;border: 2px solid; border-radius: 5px;margin-top:-5px;"><i class="fa fa-search"></i></button>
+     </form>
+   </div>
+ </div>
+
+ <div class="inquiry" style="margin-top:5%; border-radius: 20px; border: 3px solid; margin-bottom: 2%; background-color: #EDDA74; margin-right: 2%; margin-left: 2%;">
+
+ <h2 style="text-align: center; margin-top: 2%;"><b>Health Inquiry</b></h2><br>
+
+ <div class="container" style="margin-bottom:1%;border: 1px solid; border-radius: 20px;">
+   <form id="myForm" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+     <h4><label for="name">Name</label></h4>
+     <input type="text"  id="name" name="firstname" placeholder="Your name.." style="border-radius:15px;">
+
+     <h4><label for="email">Email</label></h4>
+     <input type="text" id="email" name="email" placeholder="Your email address.."style="border-radius:15px;">
+
+     <h4><label for="address">Address</label></h4>
+     <input type="text" id="address" name="address" placeholder="Your address.." style="border-radius:15px;">
+
+     <h4><label for="telephone">Telephone</label></h4>
+     <input type="text" id="telephone" name="telephone" placeholder="Your telephone.." style="border-radius:15px;">
+
+
+     <h4><label for="inquirytype">Inquiry Type</label></h4>
+     <select id="inquirytype" name="inquirytype" style="border-radius:10px;">
+       <option value="select">Select--</option>
+       <option value="garbagenotcollected">Medicine Inquiry</option>
+       <option value="garbagenotcollected">Maintanance & Cleanliness Inquiry</option>
+       <option value="garbagenotcollected">Hospital Inquiry</option>
+       <option value="garbagenotcollected">Health staff Inquiry</option>
+       <option value="other">other</option>
+     </select>
+
+     <h4><label for="suggetions">Suggetions</label></h4>
+     <textarea id="suggetions" name="suggetions" placeholder="Write something.." style="height:100px;border-radius:10px;"></textarea>
+
+<!---CAPTCHA-------------------------->
+     <form action="?" method="POST">
+     <div class="g-recaptcha d-flex justify-content-center" data-sitekey=""><img src="img/captcha.png"/ style="width: 150px;height:auto;"></div>
+     <div class="code d-flex justify-content-center">
+       <p>Enter the code above here:</p><br></div>
+         <div class="code d-flex justify-content-center">
+       <input type="text" name="code" placeholder="Enter the code here" style="border-radius:15px;width:300px;"></div>
+       <div class="code d-flex justify-content-center">
+         <p>Can't read the image?<a href="#">Click here</a>to refresh</p></div>
+     </form>
+<!---CAPTCHA END---------------------------->
+
+     <input type="submit" value="Submit" onclick="submit_form()">
+     <input type="reset" value="Reset" onclick="reset_form()">
+   </form>
+ </div>
+</div>
+</div>
 <br>
 
-<!-- Reservation form -->
-
-<div class="inquiry" style="margin-top:5%; border-radius: 20px; border: 3px solid; margin-bottom: 2%; background-color: #EDDA74; margin-right: 2%; margin-left: 2%;">
-
-<h2 style="text-align: center; margin-top: 2%;"><b>Health Inquiry</b></h2><br>
-
-<div class="container" style="margin-bottom:1%;border: 1px solid; border-radius: 20px;background-color:#f2f2f2;">
-  <form action="/action_page.php">
-    <h4><label for="name" style="margin-top:2%;">Name</label></h4>
-    <input type="text" id="fname" name="firstname" placeholder="Your name.." style="border-radius:15px;">
-
-    <h4><label for="email">Email</label></h4>
-    <input type="text" id="email" name="email" placeholder="Your email address.."style="border-radius:15px;">
-
-    <h4><label for="address">Address</label></h4>
-    <input type="text" id="address" name="address" placeholder="Your address.." style="border-radius:15px;">
-
-    <h4><label for="telephone">Telephone</label></h4>
-    <input type="text" id="telephone" name="telephone" placeholder="Your telephone.." style="border-radius:15px;">
-
-
-    <h4><label for="inquirytype">Inquiry Type</label></h4>
-    <select id="inquirytype" name="inquirytype" style="border-radius:10px;">
-      <option value="select">Select--</option>
-      <option value="garbagenotcollected">Medicine</option>
-      <option value="garbagenotcollected">Health Properties</option>
-      <option value="garbagenotcollected">Medical staff</option>
-      <option value="garbagenotcollected">Health policies</option>
-      <option value="garbagenotcollected">Health projects</option>
-      <option value="other">other</option>
-    </select>
-
-    <h4><label for="suggetions">Suggetions</label></h4>
-    <textarea id="suggetions" name="suggetions" placeholder="Write something.." style="height:100px;border-radius:10px;"></textarea>
-
-    <!---CAPTCHA-------------------------->
-          <form action="?" method="POST">
-          <div class="g-recaptcha d-flex justify-content-center" data-sitekey=""><img src="img/captcha.png"/ style="width: 150px;height:auto;"></div>
-          <div class="code d-flex justify-content-center">
-            <p>Enter the code above here:</p><br></div>
-              <div class="code d-flex justify-content-center">
-            <input type="text" name="code" placeholder="Enter the code here" style="border-radius:15px;width:300px;"></div>
-            <div class="code d-flex justify-content-center">
-              <p>Can't read the image?<a href="#">Click here</a>to refresh</p></div>
-          </form>
-    <!---CAPTCHA END---------------------------->
-
-
-    <input type="submit" value="Submit" style="margin-bottom:2%;">
-    <input type="reset" value="Reset" style="margin-bottom:2%;">
-
-  </form>
+<div class="footer">
+  <div class="row">
+    <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 2%;">
+      <a href="#"<i class="fab fa-cc-paypal fa-2x" style="margin-top: 2%;margin-left: -200px;text-decoration:none;color: white;"></i></a>
+      <a href="#"<i class="fab fa-cc-amex fa-2x"  style="margin-top: 2%;margin-left:3%;text-decoration:none;color: white;"></i></a>
+      <a href="#"<i class="fab fa-cc-visa fa-2x" style="margin-top: 2%;margin-left:3%;text-decoration:none;color: white;"></i></a>
+      <a href="#"<i class="fab fa-cc-mastercard fa-2x" style="margin-top: 2%;margin-left:3%;text-decoration:none;color: white;" ></i></a>
+    </div>
+    <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 4%;">
+      <h6> copyright@2020 Panadura.uc.gov.lk</h6>
+    </div>
+    <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 2%;">
+      <a href="https://www.facebook.com/pages/category/Government-Organization/Panadura-Urban-Council-265242854102860/" target="_blank"<i class="fab fa-facebook-square fa-2x" style="margin-top: 2%;margin-left:50%;color:white;text-decoration:none;"></i></a>
+      <a href="http://www.gmail.com/" target="_blank"<i class="fas fa-envelope fa-2x" style="margin-top: 2%;margin-left:3%;color: white;text-decoration:none;"></i></a>
+      <a href="http://www.instagram.com/" target="_blank"<i class="fab fa-instagram-square fa-2x" style="margin-top: 2%;margin-left:3%;color:white;text-decoration:none;"></i></a>
+      <a href="http://www.twitter.com/" target="_blank"<i class="fab fa-twitter-square fa-2x" style="margin-top: 2%;margin-left:3%;color:white;text-decoration:none;"></i></a>
+  </div>
 </div>
 </div>
 
-<!-- footer -->
+<!------------------------------- reset ----------------------->
+<script type="text/javascript">
+ var onloadCallback = function() {
+   alert("Your Captcha is ready!");
+ };
+ function reset_form() {
+     document.getElementById("myForm").reset();
+     alert("Please Resubmit the Form, Thank You!");
+ };
+ function submit_form() {
+     document.getElementById("myForm").reset();
+     alert("Form Submitted, Thank You!");
+ };
+</script>
+<!----------------------------------- reset------------------------>
 
-              <div class="footer">
-                <div class="row">
-                  <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 2%;">
-                    <i class="fab fa-cc-paypal fa-2x" style="margin-top: 2%;margin-left: -200px;"></i>
-                    <i class="fab fa-cc-amex fa-2x"  style="margin-top: 2%;margin-left:3%;"></i>
-                    <i class="fab fa-cc-visa fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
-                    <i class="fab fa-cc-mastercard fa-2x" style="margin-top: 2%;margin-left:3%;" ></i>
-                  </div>
-                  <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 4%;">
-                    <h6> copyright@2020 Panadura.uc.gov.lk</h6>
-                  </div>
-                  <div class="col-md-4 col-lg-4 col-xl-4" style="margin-top: 2%;">
-                    <i class="fab fa-facebook-square fa-2x" style="margin-top: 2%;margin-left:50%;"></i>
-                    <i class="fas fa-envelope fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
-                    <i class="fab fa-instagram-square fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
-                    <i class="fab fa-twitter-square fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
-                </div>
-              </div>
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+   async defer>
+</script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
