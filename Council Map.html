@@ -215,7 +215,8 @@ ul li ul li:hover {background: #FFE5B4;}
 .footer {
 
 left: 0;
-margin-bottom: 2%;
+margin-top: 20%;
+margin-bottom: 1%;
 width: 100%;
 height: 100px;
 background-color:  #0C090A;
@@ -250,7 +251,7 @@ body{
           <div id="admin" class="col-sm-2 align-self-center"><div class="card" style="width: 14rem;">
             <i class="fas fa-user fa-3x"></i>
             <div class="card-body">
-              <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Admin%20Login.html" class="btn btn-dark" style="color:#fff;">Admin Login</a>
+              <a href="#" class="btn btn-dark" style="color:#fff;">Admin Login</a>
             </div>
           </div>
         </div>
@@ -265,7 +266,7 @@ body{
         <a href="#">The Council</a>
         <ul>
           <li><a href="#">Vision and Mission</a></li>
-          <li><a href="#">Council History</a></li>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Council%20Histroy.html">Council History</a></li>
           <li><a href="#">General Information</a></li>
           <li><a href="#">Council Manager</a></li>
           <li><a href="#">Council Map</a></li>
@@ -360,8 +361,8 @@ body{
     <br><br><br>
     <h2 style="text-align: center;"><b>Council Map</b></h2>
 
-    <div class="container-fluid col-md-12 col-lg-12 col-xl-12" style="height: 500px;">
-      <div class="row">
+    <div class="container-fluid col-md-12 col-lg-12 col-xl-12" style="height: 200px;">
+
         <div class="left col-md-12 col-lg-12 col-xl-12" style="border-radius: 10px;background-color: #ffffb3; position:relative; z-index:-1">
           <div class="col">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -369,14 +370,28 @@ body{
                 <div class="carouseltext">
                   <h4><p style="text-align: center;"><b>55.04KM belonging to the municipal council. It is hopped to develop and maintain the area in a planned manner by maintaning all the roads, drains, bridges, culverts etc. in a planned manner and there by facilitating the lifestyle of the people.<b></p></h4>
                 </div>
-
             </div>
-
-
           </div>
         </div>
     </div>
+</div>
+<div class="container-fluid">
+  <div class="maps col-md-12 col-lg-12 col-xl-12">
+  <div class="row">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.4435366313564!2d79.90491351430748!3d6.715603472764522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24610bc368a3f%3A0xff7dc7e7ef7beb13!2sPanadura%20Urban%20Council%2C%20Panadura!5e0!3m2!1sen!2slk!4v1602088355517!5m2!1sen!2slk"
+            width="700"
+            height="930"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0">
+    </iframe>
+    <div class="map col-md-6 col-lg-6 col-xl-6">
+      <img src="img/map.jpg" alt=""  style="width:100%;height:auto;margin-left:5%;" >
+    </div>
   </div>
+</div>
 </div>
   <div>
     <div class="footer">
@@ -399,5 +414,9 @@ body{
     </div>
   </div>
 </div>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=tc0y4np71&callback=myMap"></script>
 </body>
 </html>
