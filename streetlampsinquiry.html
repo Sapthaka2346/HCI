@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<title>Registration</title>
+<title>Waste Management</title>
 
 <link rel="stylesheet" type="text/css" href="css/all.min.css">
 
@@ -202,7 +202,6 @@ margin-left:0.5%;
 margin-right: 2%;
 }
 
-
 </style>
 
 <body>
@@ -285,7 +284,7 @@ margin-right: 2%;
    <li>
      <a href="#">Inquiry</a>
      <ul>
-       <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/streetlampsinquiry.html">Street Lights</a></li>
+       <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/streetlampsinquiry.html">Street Lamps</a></li>
        <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Waste_Management.html">Waste Management</a></li>
        <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Health%20Inquiry.html">Health</a></li>
        <li><a href="#">Other</a></li>
@@ -327,65 +326,52 @@ margin-right: 2%;
    </div>
  </div>
 
+ <div class="inquiry" style="margin-top:5%; border-radius: 20px; border: 3px solid; margin-bottom: 2%; background-color: #EDDA74; margin-right: 2%; margin-left: 2%;">
 
-  <div class="inquiry" style="margin-top:5%; border-radius: 20px; border: 3px solid; margin-bottom: 2%; background-color: #EDDA74; margin-right: 2%; margin-left: 2%;">
+ <h2 style="text-align: center; margin-top: 2%;"><b>Street Lamps Inquiry</b></h2><br>
 
-  <h2 style="text-align: center; margin-top: 2%;"><b>Registration</b></h2><br>
+ <div class="container" style="margin-bottom:1%;border: 1px solid; border-radius: 20px;  " >
+   <form id="myForm" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+     <h4><label for="name">Name</label></h4>
+     <input type="text"  id="name" name="firstname" placeholder="Your name.." style="border-radius:15px;">
 
-  <div class="container" style="margin-bottom:1%;border: 1px solid; border-radius: 20px;">
-    <form id="myForm" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+     <h4><label for="email">Email</label></h4>
+     <input type="text" id="email" name="email" placeholder="Your email address.."style="border-radius:15px;">
 
-      <h4><label for="name">Full Name</label></h4>
-      <input type="text" id="fname" name="firstname" placeholder="Type your full name.." style="border-radius:15px;">
+     <h4><label for="address">Address</label></h4>
+     <input type="text" id="address" name="address" placeholder="Your address.." style="border-radius:15px;">
 
-      <h4><label for="email">Address</label></h4>
-      <input type="text" id="email" name="email" placeholder="Type your address.."style="border-radius:15px;">
+     <h4><label for="telephone">Telephone</label></h4>
+     <input type="text" id="telephone" name="telephone" placeholder="Your telephone.." style="border-radius:15px;">
 
-      <h4><label for="address">Mobile</label></h4>
-      <input type="text" id="address" name="address" placeholder="Type your mobile number.." style="border-radius:15px;">
+     <h4><label for="location">Location</label></h4>
+     <select id="location" name="location" style="border-radius:15px;">
+       <option value="select">Select--</option>
+       <option value="athulkotte">AthulKotte</option>
+       <option value="bandaranayakepura">Bandaranayakepura</option>
+       <option value="nawala">Nawala</option>
+       <option value="nugegoda">Nugegoda</option>
+       <option value="obesekarapura">Obesekarapura</option>
+       <option value="pagoda">Pagoda</option>
+       <option value="rajagiriya">Rajagiriya</option>
+     </select>
 
-      <h4><label for="telephone">Email</label></h4>
-      <input type="text" id="telephone" name="telephone" placeholder="Type your email address.." style="border-radius:15px;">
+     <h4><label for="Nameoftheroad">Name of the road</label></h4>
+     <input type="text" id="Name of the road" name="Name of the road" placeholder=" Name of the road.." style="border-radius:15px;">
 
-      <h4><label for="telephone">Password</label></h4>
-      <input type="text" id="telephone" name="telephone" placeholder="Enter a password with 8 characters.." style="border-radius:15px;">
+     <h4><label for="LampNO">Lamp Number</label></h4>
+     <input type="text" id="LampNO" name="LampNO" placeholder=" Lamp Number.." style="border-radius:15px;">
 
-      <h4><label for="telephone">Confirm Password</label></h4>
-      <input type="text" id="telephone" name="telephone" placeholder="Type password again.." style="border-radius:15px;">
+     <h4><label for="inquirytype">Inquiry Type</label></h4>
+     <select id="inquirytype" name="inquirytype" style="border-radius:10px;">
+       <option value="select">Select--</option>
+       <option value="Connection Fault">Connection Fault</option>
+       <option value="Bulb Should Change">Bulb Should Change</option>
+       <option value="other">other</option>
+     </select>
 
-
-      <h4><label for="location">Division</label></h4>
-      <select id="location" name="location" style="border-radius:15px;">
-        <option value="select">Select your division</option>
-        <option value="athulkotte">Division 1</option>
-        <option value="bandaranayakepura">Division 2</option>
-        <option value="nawala">Division 3</option>
-        <option value="nugegoda">Division 4</option>
-        <option value="obesekarapura">Division 5</option>
-        <option value="pagoda">Division 6</option>
-        <option value="rajagiriya">Division 7</option>
-      </select>
-
-      <h4><label for="inquirytype">Street</label></h4>
-      <select id="inquirytype" name="inquirytype" style="border-radius:10px;">
-        <option value="select">Select your street</option>
-        <option value="garbagenotcollected">De soysa mawatha</option>
-        <option value="other">Jubilee road</option>
-        <option value="other">Perera mawatha</option>
-        <option value="other">Silva mawatha</option>
-        <option value="other">Vijaya road</option>
-      </select>
-
-      <h4><label for="inquirytype">Property Number</label></h4>
-      <select id="inquirytype" name="inquirytype" style="border-radius:10px;">
-        <option value="select">Select your property number</option>
-        <option value="garbagenotcollected">A400</option>
-        <option value="other">A401</option>
-        <option value="other">A402</option>
-        <option value="other">B350</option>
-        <option value="other">B351</option>
-      </select>
-
+     <h4><label for="Description">Description</label></h4>
+     <textarea id="Description" name="Description" placeholder="Write something.." style="height:100px;border-radius:10px;"></textarea>
 
 
 <!---CAPTCHA-------------------------->
@@ -399,10 +385,6 @@ margin-right: 2%;
          <p>Can't read the image?<a href="#">Click here</a>to refresh</p></div>
      </form>
 <!---CAPTCHA END---------------------------->
-
-<div class="code d-flex justify-content-center">
-<input type="checkbox" id="agreement" name="agreement" value="condition" style="Margin-top:5px; margin-right:5px;">
-  <label for="agreement">I agree for the above terms and conditions</label><br></div>
 
      <input type="submit" value="Submit" onclick="submit_form()">
      <input type="reset" value="Reset" onclick="reset_form()">
@@ -428,8 +410,8 @@ margin-right: 2%;
       <a href="http://www.twitter.com/" target="_blank"<i class="fab fa-twitter-square fa-2x" style="margin-top: 2%;margin-left:3%;color:white;text-decoration:none;"></i></a>
   </div>
 </div>
-
 </div>
+
 <!------------------------------- reset ----------------------->
 <script type="text/javascript">
 
