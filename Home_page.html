@@ -47,6 +47,7 @@
   width:130px;
   height: auto;
   float: right;
+  padding-top: 10px;
 }
 
 #panadura{
@@ -264,6 +265,29 @@ text-align: center;
   animation: shakeY;
   animation-duration: 5s;
   cursor: alias;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgba(0,0,0,.7);
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+#myBtn:hover {
+  background-color: #8C001A;
+  /* animation: shakeY;
+  animation-duration: 2s; */
 }
 
 </style>
@@ -521,14 +545,15 @@ text-align: center;
             <a href="http://www.gmail.com/" target="_blank"<i class="fas fa-envelope fa-2x" style="margin-top: 2%;margin-left:3%;color: white;text-decoration:none;"></i></a>
             <a href="http://www.instagram.com/" target="_blank"<i class="fab fa-instagram-square fa-2x" style="margin-top: 2%;margin-left:3%;color:white;text-decoration:none;"></i></a>
             <a href="http://www.twitter.com/" target="_blank"<i class="fab fa-twitter-square fa-2x" style="margin-top: 2%;margin-left:3%;color:white;text-decoration:none;"></i></a>
-        </div>
+
+            <!------------------------------------------- go up------------------------->
+            <i class="fas fa-chevron-up fa-2x" onclick="topFunction()" id="myBtn" title="Go to top"></i></button>
+            <!------------------------------------------go up----------------------------->
+          </div>
+            <!---------------------------------Go up------------------------------>
+          </div>
       </div>
 
-      <!------------------------------------------- go up------------------------->
-      <i class="fas fa-chevron-up fa-2x" onclick="topFunction()" id="myBtn" title="Go to top"></i></button>
-      <!------------------------------------------go up----------------------------->
-    </div>
-      <!---------------------------------Go up------------------------------>
           <script>
           function myFunction() {
             var x = document.getElementById("myTopnav");

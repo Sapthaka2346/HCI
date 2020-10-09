@@ -14,6 +14,9 @@
 .header{
   overflow: hidden;
   width: auto;
+  z-index: 1;
+  position:relative;
+
 }
 
 .headerleft{
@@ -40,6 +43,7 @@
   width:130px;
   height: auto;
   float: right;
+  padding-top: 10px;
 }
 
 #panadura{
@@ -75,6 +79,8 @@
   margin-right: 1%;
   border: 2px solid;
   border-radius: 10px;
+    z-index: 1;
+    position:relative;
 
 }
 
@@ -87,6 +93,7 @@
   padding-top: 8px;
   padding-bottom: 8px;
   display:inline-block;
+    z-index: 1;
 
 }
 
@@ -122,11 +129,23 @@ ul li ul li:hover {background: #FFE5B4;}
   margin-right: 10px;
 
 }
+.headerone {
+  position: fixed;
+  top: 30%;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.headerone h2 {
+  text-align: center;
+}
 
 .progress-container {
   width: 100%;
   height: 8px;
   background: #ccc;
+  position: fixed;
 }
 .progress-bar {
   height: 8px;
@@ -374,14 +393,12 @@ margin-right: 10px;
       </div>
     </div><br><br><br>
 
-    <h2 style="text-align: center;"><b>News & Events</b></h2>
-
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+    <div class="headerone">
+      <h2>View News</h2>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
     </div>
-
-
-
     <div class="content">
 
     <h3>The Alms-Giving of Galawatimodara Pre School</h3>
