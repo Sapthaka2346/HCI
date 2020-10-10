@@ -58,6 +58,30 @@ body{
   float: right;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgba(0,0,0,.7);
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+#myBtn:hover {
+  background-color: #8C001A;
+  /* animation: shakeY;
+  animation-duration: 2s; */
+}
+
+
 #panadura{
   text-align: center;
   color: #FFFFFF;
@@ -193,7 +217,7 @@ ul li ul li:hover {background: #FFE5B4;}
       <li>
         <a href="#">The Council</a>
         <ul>
-          <li><a href="#">Vision and Mission</a></li>
+          <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/vision&mission.html">Vision and Mission</a></li>
           <li><a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Council%20Histroy.html">Council History</a></li>
           <li><a href="#">General Information</a></li>
           <li><a href="#">Council Manager</a></li>
@@ -1242,6 +1266,49 @@ ul li ul li:hover {background: #FFE5B4;}
         <i class="fas fa-envelope fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
         <i class="fab fa-instagram-square fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
         <i class="fab fa-twitter-square fa-2x" style="margin-top: 2%;margin-left:3%;"></i>
+
+        <!------------------------------------------- go up------------------------->
+        <i class="fas fa-chevron-up fa-2x" onclick="topFunction()" id="myBtn" title="Go to top"></i></button>
+        <!------------------------------------------go up----------------------------->
+      </div>
+        <!---------------------------------Go up------------------------------>
+      </div>
+      </div>
+
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      </script>
+      <!-------------------------------------Go up--------------------------------------------->
+
+
       </div>
     </div>
   </div>
