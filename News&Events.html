@@ -14,9 +14,6 @@
 .header{
   overflow: hidden;
   width: auto;
-  z-index: 1;
-  position:relative;
-
 }
 
 .headerleft{
@@ -28,7 +25,6 @@
 }
 
 .container-fluid{
-  padding-top: 2%;
   height:100vh;
 
 }
@@ -76,11 +72,10 @@
 .nav{
   background-color: #e68a00;
   margin-top: 1%;
-  margin-right: 1%;
   border: 2px solid;
   border-radius: 10px;
-    z-index: 1;
-    position:relative;
+  z-index: 1;
+  position:relative;
 
 }
 
@@ -93,8 +88,6 @@
   padding-top: 8px;
   padding-bottom: 8px;
   display:inline-block;
-    z-index: 1;
-
 }
 
 ul {
@@ -130,27 +123,28 @@ ul li ul li:hover {background: #FFE5B4;}
 
 }
 .headerone {
-  position: fixed;
-  top: 30%;
   z-index: 1;
-  width: 100%;
-  background-color: #f1f1f1;
+  width: 98.7%;
+  background-color: #ffffe6;
 }
 
 .headerone h2 {
   text-align: center;
+  padding-top: 300px;
 }
 
 .progress-container {
-  width: 100%;
+  width: 96.7%;
   height: 8px;
   background: #ccc;
   position: fixed;
+  top: 19.5%;
 }
 .progress-bar {
   height: 8px;
-  background: #ffa64d;
+  background: #e68a00;
   width: 0%;
+  z-index: 1;
 }
 
 .content {
@@ -163,6 +157,7 @@ ul li ul li:hover {background: #FFE5B4;}
   border-left-width: 5px;
   border-right-width: 5px;
   background-color: #ffffb3;
+  padding-top: 200px;
 }
 
 .clearfix {
@@ -199,6 +194,8 @@ h6 {
   margin:50px auto;
   overflow :hidden;
   border-radius: 20px;
+  z-index: -1;
+  position: relative;
 }
 .accordion ul
 {
@@ -270,8 +267,8 @@ margin-right: 10px;
 
 <body>
 
-
   <div class="container-fluid">
+    <div class="fix" style="position:fixed;background-color: #ffffe6;">
     <div class="header col-lg-12">
       <div class="row">
         <div class="headerleft col-lg-10">
@@ -293,7 +290,7 @@ margin-right: 10px;
     </div>
   </div>
 
-  <div class="nav">
+  <div class="nav" >
     <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/Home_page.html">Home</a>
     <ul>
       <li>
@@ -377,7 +374,7 @@ margin-right: 10px;
       </li>
 
       <a href="#">Feedback</a>
-      <a href="#">Contact Us</a>
+      <a href="file:///C:/Users/Sapthaka%20Godage/github/HCI/ContactUs.html">Contact Us</a>
     </div>
 
 
@@ -392,7 +389,7 @@ margin-right: 10px;
         </form>
       </div>
     </div><br><br><br>
-
+</div>
     <div class="headerone">
       <h2>View News</h2>
       <div class="progress-container">
@@ -401,7 +398,7 @@ margin-right: 10px;
     </div>
     <div class="content">
 
-    <h3>The Alms-Giving of Galawatimodara Pre School</h3>
+    <h3 style="text-align:center;">The Alms-Giving of Galawatimodara Pre School</h3>
     <div class="clearfix">
       <img class="img2" src="img/alms.jpg" alt="Festival" width="200" height="170">
       Alms Giving Ceremony organized by Galawetimodara Pre School on 28.08.2020.
@@ -410,7 +407,7 @@ margin-right: 10px;
     <hr><br>
 
 
-     <h3>Blood Donation Camp</h3>
+     <h3 style="text-align:center;">Blood Donation Camp</h3>
      <div class="clearfix">
       <img class="img2" src="img/blood1.jpg" alt="Blood" width="200" height="170">
       Blood Donation Camp organized by Panadura Urban Council, Migettuwatte Gunananda Thero Memorial Public Library and Lions Club will be held on 12<sup>th</sup> October 2020 at 8.30 pm 1.30 pm at Panadura Town Hall.
@@ -419,7 +416,7 @@ margin-right: 10px;
     <hr><br>
 
 
-     <h3>Opening of the new building</h3>
+     <h3 style="text-align:center;">Opening of the new building</h3>
      <div class="clearfix">
     <img class="img2" src="img/building.jpg" alt="Building" width="200" height="170">
       Opening Ceremony of the new building constructed for the office building of the Industrial Division and the Maintenance of the Automotive Machinery Maintenance Ceremony to mark the one year anniversary of the appointment of the new Council on Thursday 15<sup>th</sup> October 2020 at 8.40 am.All arrangements are made with auspicious moment.We invite you all to attend.
@@ -430,7 +427,7 @@ margin-right: 10px;
     <hr><br>
 
 
-    <h3>Grand Criket Tournament - 2020</h3>
+    <h3 style="text-align:center;">Grand Criket Tournament - 2020</h3>
      <div class="clearfix">
     <img class="img2" src="img/cricket.jpg" alt="Cricket" width="200" height="170">
       The grand cricket tournament between Panadura Police and Pinwaththa Police organized by the Panadura Municipal Council will be held on Sunday 10<sup>th</sup> October 2020.It will be held at the Municipal Stadium from 8.00 am.
@@ -439,7 +436,7 @@ margin-right: 10px;
     <h6>Updated Time:2020-10-04 16:12:06</h6>
     <hr><br>
 
-    <h3>Tree Planting Campagin</h3>
+    <h3 style="text-align:center;">Tree Planting Campagin</h3>
     <div class="clearfix">
       <img class="img2" src="img/tree.jpg" alt="Tree" width="200" height="170">
       The plan distrubution program organized by the community section was carried out on 20<sup>th</sup> of September 2020 at the Manicipal Council Office under the patronage of the Secretary.
@@ -447,7 +444,7 @@ margin-right: 10px;
     <h6>Updated Time:2020-09-21 09:12:00</h6>
     <hr><br>
 
-     <h3>Literary Festival</h3>
+     <h3 style="text-align:center;">Literary Festival</h3>
      <div class="clearfix">
       <img class="img2" src="img/literary.jpg" alt="Festival" width="200" height="170">
       Revival Literary Festival will be held under the potronage of the Hon. Mayor of the Panadura Urban Council on Monday 23<sup>rd</sup> October at 8.30 am at the Panadura Town Hall with music by <strong><i>Verteran Lyricist Wasantha Kumara Kobawaka</i></strong> and <strong><i>Verteran Writer Sandaruwan Liyanaarachchi</i></strong>.Invitation to you / all of you.
@@ -456,7 +453,7 @@ margin-right: 10px;
     <h6>Updated Time:2020-10-05 08:40:00</h6>
     <hr><br>
 
-     <h3>Health Medical Clinic</h3>
+     <h3 style="text-align:center;">Health Medical Clinic</h3>
      <div class="clearfix">
     <img class="img2" src="img/medical.jpg" alt="Medical" width="200" height="170">
       The Health Medical Clinic, jointly organized be the Panadura Municipal Council and the Migettuwatte Gunananda Tero Memorial Public Library, will be held on 27.05.2020 at the Library Auditorium from 7.30 to 11.30 am.
@@ -464,7 +461,7 @@ margin-right: 10px;
     <h6>Updated Time:2020-05-20 11:30:50</h6>
     <hr><br>
 
-    <h3>Renovation of Panadura Beach Children's Park</h3>
+    <h3 style="text-align:center;">Renovation of Panadura Beach Children's Park</h3>
      <div class="clearfix">
       <img class="img2" src="img/play1.jpg" alt="Festival" width="200" height="170">
       Panadura Urban Council puts forward another community service.Renovation of Panadura Beach Children's Park was discussed with the sponsorship of Mrs.Nadeeka Ranasinghe who was crowned as the Bridal Beauty of Sri Lanka.
@@ -547,3 +544,4 @@ margin-right: 10px;
     </div>
 
   </body>
+</html>
